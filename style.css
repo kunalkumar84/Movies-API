@@ -1,0 +1,146 @@
+*{
+    margin:0%;
+    padding:0%;
+
+}
+
+body{
+    font-family:"roboto",sans-serif;
+    background:linear-gradient(to right,#283048,#859398);
+
+}
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:space-around;
+    background-color:rgba(3,3,29);
+    color:white;
+    height:100px;
+}
+
+.logo{
+    font-size:30px;
+
+}
+
+
+.searchBar input{
+   
+    width:260px;
+    flex-wrap:wrap;
+    padding:12px;
+    font-size:18px;
+    border:none;
+    outline: none;
+}
+.searchBar button{
+    width:80px;
+    height:45px;
+    flex-wrap:wrap;
+    font-size:18px;
+    background-color:orange;
+    color:white;
+    border:none;
+    margin-inline:4px;
+    cursor:pointer;
+    outline:none;
+}
+
+.card{
+    display:flex;
+    justify-content:center;
+    margin-top:19px;
+    margin-bottom:19px;
+    
+    
+    
+}
+.movieCard{
+    display:flex;
+    background-color:#FFF;
+    padding:22px;
+    width:1000px;
+    margin:auto;
+    gap:22px;
+    border-radius:5px;
+}
+
+.movieCard h1{
+    text-align:center;
+}
+
+.movieCard .rating{
+    text-align:center;
+}
+.movieCard p{
+    margin-top:22px;
+}
+.cardText{
+    margin-top:22px;
+}
+.movieCard a{
+    background-color:orangered;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    font-size:17px;
+    display:flex;
+    justify-content:center;
+    width:80%;
+    padding:7px;
+    margin:auto;
+    position:relative;
+    margin-top:20px;
+}
+
+.movieCard span{
+    color:rgba(68,68,68);
+
+}
+
+
+
+@media screen and(max-width:700px){
+    nav{
+        display:block;
+        height:120px;
+    }
+    .searchBar{
+        display:flex;
+        justify-content:center;
+        margin-top:11px;
+    }
+    .logo{
+        text-align:center;
+    }
+
+     .movieCard{
+        display: block;
+        text-align: center;
+        width:80%;
+    }
+    
+    
+}
+ 
+@media screen and (max-width:450px){
+    .searchBar input{
+        width:50%;
+    }
+    .searchBar button{
+        margin-inline:3px;
+        font-size:15px;
+    }
+    .movieCard img{
+        width:90%;
+    }
+}
+
+@media screen and (max-width:650px){
+  .movieCard{
+    display:block;
+    text-align:center;
+    width:80%;
+  }
+}
